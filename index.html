@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSMM-TOOL</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://sheetdb.io/handlebars.js"></script>
+    <style>
+        .developer-credit {
+            position: absolute;
+            bottom: 10px;
+            left: 35px;
+            font-size: 14px;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>FSMM-TOOL</h1>
+    </header>
+    <section id="urlInput">
+        <h2>Img Url Blacklist Check:</h2>
+        <input type="text" id="url" placeholder="Paste URL here">
+        <button id="runCheckBtn">Run Check</button>
+        <p id="resultMessage"></p>
+    </section>
+    <section id="progressbar">
+        <h2>Prompt Similarity: %VALUE%</h2>
+        <progress id="progress" max="100" value="0"></progress>
+        <p>Results are not 100% accurate.</p>
+    </section>
+    <main>
+        <div class="prompt">
+            <h2>Main Prompt:</h2>
+            <textarea id="text-editor1" class="text-editor" placeholder="Start writing..."></textarea>
+            <div class="word-counter" id="word-counter1">Word Count: 0</div>
+        </div>
+        <div class="prompt">
+            <h2>Altered Prompt:</h2>
+            <textarea id="text-editor2" class="text-editor" placeholder="Start writing..."></textarea>
+            <div class="word-counter" id="word-counter2">Word Count: 0</div>
+        </div>
+        <div class="prompt">
+            <h2>Response</h2>
+            <h3>Forbidden Words:</h3>
+            <p>Example</p>
+            <textarea id="text-editor3" class="text-editor large-textarea" placeholder="Start writing..."></textarea>
+            <div class="word-counter" id="word-counter3">Word Count: 0</div>
+        </div>
+    </main>
+    <footer>
+        <button id="clear-btn">Clear</button>
+        <p class="developer-credit">Developed by Nicholas Xander Davis.</p>
+    </footer>
+    <script src="js/input.js"></script>
+    <script src="js/url.js"></script>
+</body>
+</html>
