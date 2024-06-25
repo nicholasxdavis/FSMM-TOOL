@@ -201,3 +201,68 @@ h3 {
 #progressbar p {
     color: gray;
 }
+#Perp {
+    background-color: #252526;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    color: #FFF;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+.popup {
+            display: none;
+            position: fixed;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #252526;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            z-index: 1000;
+            text-align: center;
+        }
+
+        #Perp .button-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #Perp button {
+            padding: 5px 10px;
+            font-size: 14px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #Perp button:hover {
+            background-color: #0056b3;
+        }
+        .popup p {
+            color: white;
+        }
+
+        /* Overlay styles */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 999;
+        }

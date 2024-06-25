@@ -21,6 +21,21 @@
     <header>
         <h1>FSMM-TOOL</h1>
     </header>
+
+   <section id="Perp"> 
+        <h2>Copy-Paste Panel:</h2>
+        <div class="button-container">
+            <button class="copy-prompt">AI Prompt</button>
+            <button class="refuse-prompt">Refusal Response</button>
+            <button class="sui-prompt">(Suicide)Refusal Response</button>
+        </div>
+    </section>
+
+    <div class="overlay" id="overlay"></div>
+    <div class="popup" id="popup">
+        <p>Text copied to clipboard</p>
+        <button id="close-popup">Close</button>
+    </div>
     <section id="urlInput">
         <h2>Img Url Blacklist Check:</h2>
         <input type="text" id="url" placeholder="Paste URL here">
@@ -57,5 +72,6 @@
     </footer>
     <script src="js/input.js"></script>
     <script src="js/url.js"></script>
+    <script src="js/perp.js"></script>
 </body>
 </html>
